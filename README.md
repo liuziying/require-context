@@ -3,6 +3,21 @@
 本插件是根据 wepy-plugin-requireall 修改，如需看原来的代码，可以搜索此插件
 在 webpack 中可以使用 require context 来对文件进行自动合并，感觉挺方便的
 
+wepy 框架下：
+## 安装
+   yarn add wepy-plugin-require-context -D
+   或
+   npm install wepy-plugin-require-context -D
+
+## 配置：
+   `wepy.config.js`文件添加`plugins`配置
+
+    plugins: {
+      'require-context': {
+        filter: new RegExp('index\\.js$')
+      }
+    }
+
 ## 一、效果
 
 ### 使用插件前：一个中心配置模块文件：config.js
