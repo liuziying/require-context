@@ -60,7 +60,7 @@ export {
 ### 1.配置`wepy.config.js`文件添加`plugins`配置
 
       plugins: {
-        'requireContext': {
+        'require-context': {
           filter: new RegExp('index\\.js$')
         }
       }
