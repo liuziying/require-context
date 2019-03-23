@@ -1,0 +1,38 @@
+{
+  "name": "require-context",
+  "version": "1.0.0",
+  "description": "去中心化模块加载插件",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "babel-node ./lib/index.js",
+    "start": "node ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets es2015,stage-1 src/ --out-dir lib/ --source-maps",
+    "cleanLib": "./node_modules/.bin/rimraf lib",
+    "bableBuild": "./node_modules/.bin/babel src --out-dir lib",
+    "prepublish": "npm run cleanLib && npm run bableBuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuziying/require-context.git"
+  },
+  "keywords": [
+    "requirt.context"
+  ],
+  "author": "liukang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuziying/require-context/issues"
+  },
+  "homepage": "https://github.com/liuziying/require-context#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "js-base64": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1"
+  }
+}
