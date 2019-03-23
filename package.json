@@ -1,6 +1,6 @@
 {
-  "name": "require-context",
-  "version": "1.0.0",
+  "name": "tk-require-context",
+  "version": "1.0.1",
   "description": "去中心化模块加载插件",
   "main": "lib/index.js",
   "scripts": {
@@ -27,7 +27,8 @@
   "homepage": "https://github.com/liuziying/require-context#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
-    "js-base64": "^2.5.1"
+    "js-base64": "^2.5.1",
+    "node-pre-gyp": "^0.12.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",

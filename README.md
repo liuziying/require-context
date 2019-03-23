@@ -1,6 +1,5 @@
 # require-context
-
-文件合并插件
+去中心化模块加载插件，主要用于配置中心，路由配置等。如配置中心，通过该插件可以分拆成多个模块，便于管理和维护。在大型项目中非常实用，不用手动引用子模块，总模块导出文件不会产生代码冲突。
 本插件是根据 wepy-plugin-requireall 修改，如需看原来的代码，可以搜索此插件
 在 webpack 中可以使用 require context 来对文件进行自动合并，感觉挺方便的
 
@@ -137,13 +136,14 @@ export {
 
     function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-方式1：
-    exports.testA = _testA2.default;
-    exports.testB = _testB2.default;
-    exports.testC = _testC2.default;
-    exports.testD = _testD2.default;
-方式2：
-    exports.testA = _testA2;
-    exports.testB = _testB2;
-    exports.testC = _testC2;
-    exports.testD = _testD2;
+#### 方式1：
+      exports.testA = _testA2.default;
+      exports.testB = _testB2.default;
+      exports.testC = _testC2.default;
+      exports.testD = _testD2.default;
+
+#### 方式2：
+      exports.testA = _testA2;
+      exports.testB = _testB2;
+      exports.testC = _testC2;
+      exports.testD = _testD2;
