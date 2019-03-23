@@ -1,5 +1,5 @@
 {
-  "name": "tk-require-context",
+  "name": "require-context-plugin",
   "version": "1.0.1",
   "description": "去中心化模块加载插件",
   "main": "lib/index.js",
